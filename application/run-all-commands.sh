@@ -20,5 +20,6 @@ cache.size --name "cache1"
 cache.registry-size
 cache.delete --name "cache1"
 cache.delete-all
+calendar.month.as-number --month September
 exit
 EOF

@@ -14,3 +14,6 @@
 >cache.registry-size
 >cache.delete --name|-n "cache1"
 >cache.delete-all
+
+
+>calendar.month.as-number --month "monthName"

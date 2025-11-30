@@ -62,5 +62,6 @@ public class BASHScriptTest
         assertThat(output.contains("size: 0")).isTrue();
         assertThat(output.contains("size: 1")).isTrue();
         assertThat(output.contains("cache deleted")).isTrue();
+        assertThat(output.contains("9")).isTrue();
     }
 }
