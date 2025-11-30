@@ -6,7 +6,7 @@ import org.springframework.shell.standard.ShellOption;
 import orioncli.core.Logger;
 
 @ShellComponent
-public class LogCommand
+public class LogInfoCommand
 {
     @ShellMethod(key = "log.info")
     public String logInfo(@ShellOption(value = {"--message", "-m"}) String message)

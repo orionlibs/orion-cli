@@ -48,5 +48,19 @@ public class BASHScriptTest
         assertThat(output.contains("Available commands: help")).isTrue();
         assertThat(output.contains("log message")).isTrue();
         assertThat(output.contains("log error message")).isTrue();
+        assertThat(output.contains("cache created")).isTrue();
+        assertThat(output.contains("added to cache")).isTrue();
+        assertThat(output.contains("value1")).isTrue();
+        assertThat(output.contains("added to cache")).isTrue();
+        assertThat(output.contains("value2")).isTrue();
+        assertThat(output.contains("size: 1")).isTrue();
+        assertThat(output.contains("cache emptied")).isTrue();
+        assertThat(output.contains("size: 0")).isTrue();
+        assertThat(output.contains("added to cache")).isTrue();
+        assertThat(output.contains("size: 1")).isTrue();
+        assertThat(output.contains("deleted element from cache")).isTrue();
+        assertThat(output.contains("size: 0")).isTrue();
+        assertThat(output.contains("size: 1")).isTrue();
+        assertThat(output.contains("cache deleted")).isTrue();
     }
 }

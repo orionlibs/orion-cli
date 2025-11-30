@@ -2,4 +2,15 @@
 
 
 >log.info -m|--message "log message"
->log.error -m|--message "log message"
+>log.error -m|--message "log error message"
+
+
+>cache.create --name|-n "cache1"
+>cache.element.add --name|-n "cache1" --key|-k "key1" --value|-v "value1"
+>cache.element.get --name|-n "cache1" --key|-k "key1"
+>cache.size --name|-n "cache1"
+>cache.empty --name|-n "cache1"
+>cache.element.delete --name|-n "cache1" --key|-k "key1"
+>cache.registry-size
+>cache.delete --name|-n "cache1"
+>cache.delete-all
