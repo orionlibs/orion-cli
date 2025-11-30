@@ -4,7 +4,7 @@ import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
 
 @ShellComponent
-public class HelpCommand
+public class CommandsCommand
 {
     @ShellMethod(key = "commands")
     public String commands()
