@@ -2,3 +2,4 @@
 
 
 >log.info -m|--message "log message"
+>log.error -m|--message "log message"

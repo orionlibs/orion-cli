@@ -9,9 +9,17 @@ import orioncli.core.Logger;
 public class LogCommand
 {
     @ShellMethod(key = "log.info")
-    public String help(@ShellOption(value = {"--message", "-m"}) String message)
+    public String logInfo(@ShellOption(value = {"--message", "-m"}) String message)
     {
         Logger.info(message);
+        return "";
+    }
+
+
+    @ShellMethod(key = "log.error")
+    public String logError(@ShellOption(value = {"--message", "-m"}) String message)
+    {
+        Logger.error(message);
         return "";
     }
 }

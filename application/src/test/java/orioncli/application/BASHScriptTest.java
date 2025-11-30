@@ -47,5 +47,6 @@ public class BASHScriptTest
         assertThat(exitCode).isEqualTo(0);
         assertThat(output.contains("Available commands: help")).isTrue();
         assertThat(output.contains("log message")).isTrue();
+        assertThat(output.contains("log error message")).isTrue();
     }
 }
