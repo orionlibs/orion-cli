@@ -2,8 +2,7 @@
 set -euo pipefail
 JAR="target/app.jar"
 java -jar "$JAR" <<'EOF'
-help
-time
-echo Hello
+help1
+help2 --name Dimi
 exit
 EOF

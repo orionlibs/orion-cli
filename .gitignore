@@ -7,7 +7,4 @@
 **/target
 **/bin
 **/*.iml
-/application/spring-shell.log
-/application/orion-cli.log
-/application/spring-shell-app.log
-/spring-shell-app.log
+**/*.log
