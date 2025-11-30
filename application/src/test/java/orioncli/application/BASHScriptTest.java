@@ -29,7 +29,7 @@ public class BASHScriptTest
 
 
     @Test
-    public void testRunHereDocScript() throws IOException, InterruptedException
+    public void testBASHScriptOfShellCommands() throws IOException, InterruptedException
     {
         ProcessBuilder pb = new ProcessBuilder()
                         .command("bash", SCRIPT.toAbsolutePath().toString())
@@ -45,7 +45,7 @@ public class BASHScriptTest
         int exitCode = p.exitValue();
         String output = new String(p.getInputStream().readAllBytes(), StandardCharsets.UTF_8);
         assertThat(exitCode).isEqualTo(0);
-        assertThat(output.contains("Available commands: help, time, echo, exit")).isTrue();
-        assertThat(output.contains("Available commands: help, help2. Dimi")).isTrue();
+        assertThat(output.contains("Available commands: help")).isTrue();
+        assertThat(output.contains("log message")).isTrue();
     }
 }

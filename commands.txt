@@ -1,0 +1,4 @@
+>help
+
+
+>log.info -m|--message "log message"
