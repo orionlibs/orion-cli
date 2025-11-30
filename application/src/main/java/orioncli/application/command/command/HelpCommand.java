@@ -1,4 +1,4 @@
-package orioncli.application.command.help;
+package orioncli.application.command.command;
 
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
