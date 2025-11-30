@@ -6,12 +6,12 @@ import org.springframework.shell.standard.ShellOption;
 import orioncli.core.Logger;
 
 @ShellComponent
-public class LogCommand
+public class LogErrorCommand
 {
-    @ShellMethod(key = "log.info")
-    public String logInfo(@ShellOption(value = {"--message", "-m"}) String message)
+    @ShellMethod(key = "log.error")
+    public String logError(@ShellOption(value = {"--message", "-m"}) String message)
     {
-        Logger.info(message);
+        Logger.error(message);
         return null;
     }
 }
