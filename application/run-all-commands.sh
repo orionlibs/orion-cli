@@ -25,6 +25,14 @@ runtime.cpus
 math.random.from-0-to-1
 math.random.integer --max 10000
 math.random.integer-except-0 --min 100 --max 10000
+crypto.md5
+crypto.sha.1
+crypto.sha.256
+crypto.sha.512
+crypto.base.64.encode.for-string
+crypto.base.64.encode.for-url
+crypto.base.64.decode.for-string
+crypto.base.64.decode.for-url
 exit
 EOF
 #compress.zip.input-files --out-dir|-o "/Users/dimiefthymiou/Downloads" --zip-name|-n "zipfile.zip" --files|-f /Users/dimiefthymiou/Downloads/1.xml,/Users/dimiefthymiou/Downloads/2.xml
