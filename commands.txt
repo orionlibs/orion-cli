@@ -17,3 +17,7 @@
 
 
 >calendar.month.as-number --month "monthName"
+
+
+>compress.zip.input-files --out-dir|-o "/Users/dimiefthymiou/Downloads" --zip-name|-n "zipfile.zip" --files|-f /Users/dimiefthymiou/Downloads/1.xml,/Users/dimiefthymiou/Downloads/2.xml
+>compress.zip.input-dirs --out-dir|-o "/Users/dimiefthymiou/Downloads" --zip-name|-n "zipfile.zip" --dirs|-d /Users/dimiefthymiou/Downloads/dir1,/Users/dimiefthymiou/Downloads/dir2
