@@ -3,7 +3,6 @@ package orioncli.application.command.cache;
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
 import org.springframework.shell.standard.ShellOption;
-import orioncli.core.cache.Cache;
 import orioncli.core.cache.CacheRegistry;
 
 @ShellComponent

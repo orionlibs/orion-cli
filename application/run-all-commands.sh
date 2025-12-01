@@ -33,6 +33,7 @@ crypto.base.64.encode.for-string
 crypto.base.64.encode.for-url
 crypto.base.64.decode.for-string
 crypto.base.64.decode.for-url
+csv.read-file.as-string --file "/Users/dimiefthymiou/Downloads/1.csv" --cache "cache1" --cache-key "csv1"
 exit
 EOF
 #compress.zip.input-files --out-dir|-o "/Users/dimiefthymiou/Downloads" --zip-name|-n "zipfile.zip" --files|-f /Users/dimiefthymiou/Downloads/1.xml,/Users/dimiefthymiou/Downloads/2.xml

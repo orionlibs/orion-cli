@@ -1,6 +1,8 @@
 package orioncli.core.cryptology.hashing.md5;
 
-public class MD5HashingExceptionCheckedException
+import orioncli.core.OrionCheckedException;
+
+public class MD5HashingException extends OrionCheckedException
 {
     private static final String DefaultErrorMessage = "Problem with MD5 encoding/decoding.";
 

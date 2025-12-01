@@ -39,3 +39,6 @@
 >crypto.base.64.encode.for-url
 >crypto.base.64.decode.for-string
 >crypto.base.64.decode.for-url
+
+
+>csv.read-file.as-string --file|-f "/Users/dimiefthymiou/Downloads/1.csv" --cache|-c "cache1" --cache-key|-ck "csv1"
