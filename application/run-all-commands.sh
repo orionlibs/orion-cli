@@ -21,5 +21,11 @@ cache.registry-size
 cache.delete --name "cache1"
 cache.delete-all
 calendar.month.as-number --month September
+runtime.cpus
+math.random.from-0-to-1
+math.random.integer --max 10000
+math.random.integer-except-0 --min 100 --max 10000
 exit
 EOF
+#compress.zip.input-files --out-dir|-o "/Users/dimiefthymiou/Downloads" --zip-name|-n "zipfile.zip" --files|-f /Users/dimiefthymiou/Downloads/1.xml,/Users/dimiefthymiou/Downloads/2.xml
+#compress.zip.input-dirs --out-dir|-o "/Users/dimiefthymiou/Downloads" --zip-name|-n "zipfile.zip" --dirs|-d /Users/dimiefthymiou/Downloads/dir1,/Users/dimiefthymiou/Downloads/dir2

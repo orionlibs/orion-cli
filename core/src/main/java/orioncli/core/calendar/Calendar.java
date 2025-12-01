@@ -8,14 +8,15 @@ public class Calendar
     public static final int hoursInADay = 24;
     public static final int secondsInAMinute = 60;
     public static final int minutesInAnHour = 60;
-    public static final int secondsInADay = hoursInADay * minutesInAnHour * secondsInAMinute;
-    public static final int secondsInAnHour = secondsInAMinute * minutesInAnHour;
-    public static final int nanosecondsInASecond = 1_000_000_000;
-    public static final int nanosecondsInAMillisecond = 1_000_000;
     public static final int daysInAYear = 365;
     public static final int daysInAMonth = 30;
-    public static final int daysInAWeek = 7;
+    public static final int secondsInADay = hoursInADay * minutesInAnHour * secondsInAMinute;
+    public static final int secondsInAYear = daysInAYear * secondsInADay;
+    public static final int secondsInAnHour = secondsInAMinute * minutesInAnHour;
     public static final int secondsInAMonth = daysInAMonth * hoursInADay * secondsInAnHour;
+    public static final int nanosecondsInASecond = 1_000_000_000;
+    public static final int nanosecondsInAMillisecond = 1_000_000;
+    public static final int daysInAWeek = 7;
     public static final int secondsIn5Minutes = 5 * secondsInAMinute;
     public static final int monthsInAYear = 12;
     public static final int minutesInADay = hoursInADay * minutesInAnHour;
@@ -26,18 +27,17 @@ public class Calendar
     public static final int millisecondsInAnHour = millisecondsInAMinute * minutesInAnHour;
     public static final int millisecondsInADay = millisecondsInAnHour * hoursInADay;
     public static final int millisecondsInAMonth = millisecondsInADay * daysInAMonth;
-    public static final int secondsInAYear = daysInAYear * secondsInADay;
-    public static Map<Integer, String> dayNumberToNameMapper;
-    public static Map<Integer, String> monthNumberToAbbreviatedNameMapper;
-    public static Map<String, Integer> monthAbbreviatedNameToNumberMapper;
-    public static Map<Integer, String> monthNumberToFullNameMapper;
-    public static Map<String, Integer> monthFullNameToNumberMapper;
     public static final String fullDatetimePattern = "yyyy-MM-dd'T'HH:mm:ss.SSS";
     public static final String fullDatetimePatternWithoutSeconds = "yyyy-MM-dd'T'HH:mm";
     public static final String fullDatetimePatternWithSpaceBetweenDateAndTime = "yyyy-MM-dd HH:mm:ss.SSS";
     public static final String fullDatetimePatternYearLast = "dd-MM-yyyy'T'HH:mm:ss.SSS";
     public static final String fullDatetimePatternYearLastWithSpaceBetweenDateAndTime = "dd-MM-yyyy HH:mm:ss.SSS";
     public static final String fullDatetimePatternYearLastWithCommaBetweenDateAndTime = "dd/MM/yyyy, HH:mm";
+    public static Map<Integer, String> dayNumberToNameMapper;
+    public static Map<Integer, String> monthNumberToAbbreviatedNameMapper;
+    public static Map<String, Integer> monthAbbreviatedNameToNumberMapper;
+    public static Map<Integer, String> monthNumberToFullNameMapper;
+    public static Map<String, Integer> monthFullNameToNumberMapper;
 
     static
     {
